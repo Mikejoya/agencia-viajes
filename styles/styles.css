@@ -19,11 +19,16 @@ figure {
     flex-direction: column;
 }
 
+.container-header h2 {
+    font-weight: 900;
+    color: #73A2BF;
+}
+
 .content-header--icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px #d6d6d6;
+    border-bottom: solid 1px #ee4e36;
 }
 
 .containt-logo img {
@@ -83,6 +88,10 @@ figure {
 
 /* Estilos Main */
 
+main {
+    position: relative;
+}
+
 .content-main--flights {
     position: relative;
     width: 100%;
@@ -103,15 +112,223 @@ figure {
     transform: translate(-50%, -50%);
 }
 
-.content-main--flights--form {
+.container-title--form {
+    width: 80%;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%, -50%);
+}
+
+.content-title-flights {
+    min-width: 1000px;
+    color: #023059;
+}
+
+.content-title-flights h1 {
+    font-size: xxx-large;
+    margin-bottom: 0px;
+}
+
+.content-title-flights p {
+    font-weight: bold;
+}
+
+.content-main--flights--form {
+    min-width: 1040px;
+    
+    padding-bottom: 22px;
+    border-radius: 8px;
+    background-color: rgba(2, 89, 89, 0.644);
+    backdrop-filter: blur(2px);
+}
+
+.flights-form {
+    position: relative;
+    min-width: 1000px;
+    height: 100px;
 }
 
 .flights-list {
     display: flex;
     gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     list-style: none;
+}
+
+.input-label {
+    position: relative;
+}
+
+.flights-list--tree, .flights-list--four {
+    display: flex;
+    gap: 24px;
+}
+
+.flights-list--four button {
+    position: relative;
+    top: -16px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.flights-list--four button:hover {
+    cursor: pointer;
+    background-color: #A0A603;
+    transition: 400ms ease;
+}
+
+.flights-list li label {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #04bfbf;
+}
+
+.flights-list li input {
+    position: relative;
+    max-width: 180px;
+    height: 32px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: solid 1px;
+    outline: none;
+    background-color: transparent;
+    &:focus-visible {
+        border: solid 1px #F2E0C9;
+        background-color: #04bfbf9d;
+    }
+    &::placeholder {
+        color: #202020;
+    }
+}
+
+/* Estilos de boton de soporte flotante */
+
+.container-support--button {
+    width: 180px;
+    position: fixed;
+    top: 90%;
+    right: 4%;
+    z-index: 99;
+}
+
+.container-support--button button {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-support--button button:hover {
+    cursor: pointer;
+    background-color: #A0A603;
+    transform: translate3d( -1px, -1px, -1px);
+    transition: 450ms ;
+}
+
+.container-support--button button figure {
+    height: 24px;
+}
+
+.container-support--button button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Recomendaciones */
+
+.content-recommendations--title {
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #73A2BF;
+    color: white;
+}
+
+.content-recommendations--title div {
+    position: relative;
+    width: 80%;
+    height: 238px;
+    background-image: url(../assets/img/world.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 8px;
+    &::after {
+        content: url(https://img.icons8.com/?size=50&id=kCz7OPT2zQaB&format=png&color=000000);
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        animation: animateAircraft 60s ease-in-out infinite;
+        font-size: xxx-large;
+    }
+    &::before {
+        content: url(https://img.icons8.com/?size=50&id=kCz7OPT2zQaB&format=png&color=000000);
+        position: absolute;
+        top: 80%;
+        right: 20%;
+        transform: rotate(-180deg);
+        animation: animateAircraft2 60s ease-in-out infinite;
+        font-size: small;
+    }
+}
+
+/* Estilos para contenedor de tarjetas */
+
+.content-cards {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    margin: 0 auto;
+}
+
+.content-cards article {
+    min-width: 350px;
+    min-height: 550px;
+    justify-self: center;
+    background-image: url(../assets/img/cartagena.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+
+
+@keyframes animateAircraft {
+    0% {
+        transform: rotate(-34deg);
+    }
+    100% {
+        transform: translate3d(20rem, -4rem, -9em);
+    }
+}
+
+@keyframes animateAircraft2 {
+    0% {
+       
+    }
+    100% {
+        transform: translate(-106px, -185px) rotate(300deg);
+    }
 }

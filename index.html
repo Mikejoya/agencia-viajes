@@ -16,6 +16,9 @@
             <figure class="containt-logo">
                 <img src="./assets/img/logoEmpresa.png" alt="Logo Empresa">
             </figure>
+            <div>
+                <h2>LATAM VIAJA</h2>
+            </div>
             <figure class="containt-icon">
                 <img src="./assets/img/user.png" alt="Icono del usuario">
             </figure>
@@ -38,35 +41,92 @@
             <video autoplay muted loop>
                 <source src="./assets/video/viajarAvion.mp4" type="video/mp4">
             </video>
-            <div class="content-main--flights--form">
-                <form action="#" class="flights-form">
-                    <ul class="flights-list">
+            <section class="container-title--form">
+                <div class="content-title-flights">
+                    <h1>¿A qué destino quiere viajar?</h1>
+                    <p>Controls sus fechas y con quien viajar.</p>
+                </div>
+                <div class="content-main--flights--form">
+                    <form action="#" class="flights-form">
+                        <ul class="flights-list">
                         <li>
-                            <label for="">Origen</label>
-                            <input type="text" placeholder="Ubicacion Actual">
+                            <label for="ubicacionActual">Origen</label>
+                            <input name="ubicacionActual" type="text" placeholder="Ubicacion Actual">
                         </li>
                         <li>
-                            <label for="">Destino</label>
-                            <input type="text" placeholder="Ubicacion destino">
+                            <label for="ubicacionDestino">Destino</label>                            
+                            <input name="ubicacionDestino" type="text" placeholder="Ubicacion destino">
                         </li>
-                        <li>
-                            <label for="">Fechas</label>
-                            <input type="text" placeholder="Dia-Mes-Año">
-                            <input type="text" placeholder="Dia-Mes-Año">
+                        <li class="">
+                            <label for="fechas">Fechas</label>
+                            <div class="div-li--form flights-list--tree">
+                                <input name="fechaIda" type="date" placeholder="Dia-Mes-Año">
+                                <input name="fechaVuelta" type="date" placeholder="Dia-Mes-Año">
+                            </div>
                         </li>
                         <li>
                             <label for="">pasajeros</label>
-                            <input type="text">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000070"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                            </button>
+                            <div class="div-li--form flights-list--four">
+                                <input name="cantidadPasajeros" type="text" placeholder="Cantidad pasajeros">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 0 24 24" width="56px" fill="#04BFBF"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </form>
             </div>
         </section>
-        <section>
+        </section>
+        <div class="container-support--button">
+            <button>
+                <figure>
+                    <img src="https://img.icons8.com/?size=100&id=wUB0486fVP3Z&format=png&color=000000" alt="icono boton soporte">
+                </figure>
+                <div>
+                    <p>
+                        ¿Necesitas ayuda?
+                    </p>
+                </div>
+            </button>
+        </div>
+        <section class="container-recommendations--destinations">
+            <section class="content-recommendations--title">
+                <div>
+                    <h2>Recomendaciones</h2>
+                    <p>Descubre nuestras recomendaciones personalizadas para tu próximo viaje y aprovecha al máximo cada destino. Desde los lugares más populares hasta joyas ocultas, te ofrecemos itinerarios detallados, consejos prácticos y las mejores opciones de alojamiento. ¡Haz de tu viaje una experiencia inolvidable con nuestras sugerencias expertas!</p>
+                </div>
+            </section>
+            <section class="container-cards--recommendations--destinations">
+                <section class="content-cards">
+                    <article>
+                        <h1>Colombia</h1>
+                        <h2>Gran Destino: Cartagena</h2>
+                        <p><strong>Descripción</strong>: Esta ciudad costera es famosa por su impresionante casco antiguo colonial, playas hermosas y vibrante vida nocturna. El Castillo de San Felipe de Barajas y las Islas del Rosario son imperdibles.</p>
+                    </article>
+                    <article>
 
+                    </article>
+                    <article>
+
+                    </article>
+                    <article>
+
+                    </article>
+                    <article>
+
+                    </article>
+                    <article>
+
+                    </article>
+                    <article>
+
+                    </article>
+                    <article>
+
+                    </article>
+                </section>
+            </section>
         </section>
     </main>
     <footer>
