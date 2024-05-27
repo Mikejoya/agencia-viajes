@@ -11,6 +11,7 @@
         <link rel="icon" href="../assets/img/logoEmpresa.png" type="image/png">
     </head>
 <body>
+    <!-- contenedor para el header logos y listas -->
     <header class="container-header">
         <section class="content-header--icons">
             <figure class="containt-logo">
@@ -63,76 +64,62 @@
             </nav>
         </section>
     </header>
-    <!-- contenedor del main -->
-    <main>
-        <section class="content-main--flights">
-            <!-- video para la renta de carros -->
-            <video autoplay muted loop>
-                <source src="../assets/video/rentaAutos.mp4" type="video/mp4">
-            </video>
-            <!-- fomulario para la renta de carros -->
-            <section class="container-title--form">
-                <div class="content-title-flights rent-car">
-                    <h1>Rente un automovil con los mejores precios.</h1>
-                    <p>Recuerde que al rentar un automovil se entrega y recoge entre las horas establecidas. </p>
-                </div>
-                <div class="content-main--flights--form">
-                    <form action="#" class="flights-form">
-                        <ul class="flights-list" style="gap: 14px;">
-                        <li>
-                            <label for="lugarAlquiler">Lugar de alquiler</label>
-                            <input name="lugarAlquiler" type="text" placeholder="lugarAlquiler" required>
-                        </li>
-                        <li class="">
-                            <label for="horarios">Horarios</label>
-                            <div class="div-li--form flights-list--tree">
-                                <input name="horarioEntrega" type="time" placeholder="hora" min="10:00" max="22:30" required>
-                                <input name="horarioRecogida" type="time" min="10:00" max="22:30" required>
-                            </div>
-                        </li>
-                        <li class="">
-                            <label for="fechas">Fechas</label>
-                            <div class="div-li--form flights-list--tree">
-                                <input name="fechaIda" type="date" placeholder="Dia-Mes-Año" required>
-                                <input name="fechaVuelta" type="date" placeholder="Dia-Mes-Año" required>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="">Automoviles</label>
-                            <div class="div-li--form flights-list--four">
-                                <select name="cantidadPasajeros" type="number" placeholder="Cantidad pasajeros">
-                                    <option value="seleccionesUnCarro" disabled selected="selected">Seleccione un carro</option>
-                                    <option value="toyotaCorolla">Toyota Corolla</option>
-                                    <option value="hyundaiElantra">Hyundai Elantra</option>
-                                    <option value="hondaCivic">Honda Civic</option>
-                                    <option value="kiaRio">Kia Rio</option>
-                                    <option value="nissanVersa">Nissan Versa</option>
-                                    <option value="fordFiesta">Ford Fiesta</option>
-                                </select>
-                                <button>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 0 24 24" width="56px" fill="#04BFBF"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-        </section>
-        <!-- boton pata soporte de los cliente -->
-        <a href="./contacto.html">
-            <div class="container-support--button">
-                <button>
-                    <figure>
-                        <img src="https://img.icons8.com/?size=100&id=wUB0486fVP3Z&format=png&color=000000" alt="icono boton soporte">
-                    </figure>
+    <!-- contenido para el main -->
+    <main class="main-about">
+        <section class="container-about">
+            <section class="container-about--latam">
+                <div class="content-about--latam">
                     <div>
-                        <p>
-                            ¿Necesitas ayuda?
-                        </p>
+                        <h1>Sobre Nosotros</h1>
+
+                        <h2>Latam Viaja</h2>
+                        <p>Es una agencia de viajes colombiana dedicada a convertir tus sueños de viaje en realidad. Con una pasión por la aventura y la exploración, nos especializamos en ofrecer experiencias de viaje únicas y memorables.</p>
+                        <h2>Nuestra Misión:</h2>
+                        <p>Proporcionar experiencias de viaje excepcionales, cuidando cada detalle para que disfrutes de un viaje sin preocupaciones.</p>
+                    <h2>Nuestro Equipo:</h2>
+                    <p>Nuestro equipo está formado por expertos en viajes con años de experiencia. Compartimos la pasión por descubrir nuevos destinos y ayudar a nuestros clientes a vivir experiencias inolvidables.</p>
                     </div>
-                </button>
+                    <figure>
+                        <img src="../assets/img/sobreNosotros.jpg" alt="personas compartiendo en oficina">
+                    </figure>
+                </div>
+            </section>
+            <section class="content-about--service">
+                <div class="about-service">
+                    <h2>Nuestros Servicios:</h2>
+                    <div>
+                        <ul>
+                        <li><strong>Reservas de Vuelos</strong>: Mejores tarifas y rutas con las principales aerolíneas.</li>
+                        <li><strong>Alojamientos</strong>: Hoteles, hostales y más, adaptados a tus necesidades.</li>
+                        <li><strong>Paquetes Turísticos</strong>: Viajes organizados con transporte, alojamiento y actividades.</li>
+                        <li><strong>Alquiler de Autos</strong>: Opciones para explorar a tu propio ritmo.</li>
+                        <li><strong>Ofertas Exclusivas</strong>: Promociones y descuentos para nuestros clientes.</li>
+                    </ul>
+                </div>
+                <h2>Nuestros Valores:</h2>
+                <div>
+                    <ul>
+                        <li><strong>Integridad</strong>: Transparencia y honestidad.</li>
+                        <li><strong>Calidad</strong>: Servicios de alta calidad.</li>
+                        <li><strong>Innovación</strong>: Mejora continua de la experiencia de viaje.</li>
+                        <li><strong>Compromiso</strong>: Satisfacción total del cliente.</li>
+                    </ul>
+                </div>
             </div>
-        </a>
+            </section>
+            <section class="container-about--choose">
+                <div class="content-about--choose">
+
+                    <div>
+                        <h2>Por Qué Elegirnos:</h2>
+                        <p>En Latam Viaja, ponemos tus necesidades primero. Personalizamos cada viaje para que sea perfecto, asegurando que vivas una experiencia única y memorable.</p>
+                    </div>
+                    <div>
+                        <h2>Contáctanos:</h2>
+                        <p>Estamos aquí para ayudarte a planificar tu próximo viaje. Juntos, haremos de tu viaje una experiencia extraordinaria.</p>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <!-- contenedor para el pie de pagina -->

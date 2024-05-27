@@ -822,6 +822,68 @@ footer {
     line-height: 24px;
 }
 
+/* Estilos para viewport de sobre nosotros */
+.main-about {
+    margin-top: 8px;
+}
+.container-about {
+    width: 100%;
+    background-color: #023059;
+    color: aliceblue;
+}
+.container-about h1 {
+    font-size: 2rem;
+    padding-top: 66px;
+}
+
+.container-about p {
+    line-height: 28px;
+}
+
+.container-about li {
+    margin-top: 8px;
+}
+
+.container-about--latam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about--latam {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about--latam img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.content-about--service {
+    display: flex;
+    justify-content: center;
+}
+
+.content-about--service .about-service {
+    width: 70%;
+}
+
+.container-about--choose {
+    display: flex;
+    justify-content: center;
+}
+
+.content-about--choose {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Animaciones para nuestro main en recomendaciones de los aviones */
 
 @keyframes animateAircraft {
