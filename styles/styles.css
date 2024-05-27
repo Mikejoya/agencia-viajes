@@ -1,12 +1,13 @@
 /* Estilos globales */
 html {
     margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -290,7 +291,7 @@ main {
     height: 24px;
 }
 
-/* Main Recomendaciones */
+/* Estilos para el Main Recomendaciones */
 
 .container-recommendations--destinations {
     background-color: #73A2BF;
@@ -346,7 +347,7 @@ main {
     }
 }
 
-/* Estilos para contenedor de tarjetas */
+/* Estilos para contenedor de tarjetas recomendaciones */
 
 .content-cards {
     width: 80%;
@@ -516,9 +517,11 @@ main {
 }
 
 .content-cards section h1 {
-    font-size: larger;
+    font-size: 2rem;
 }
 /*------------------------------------------------------------*/
+
+/* Estilos para las tarjetas de paquetes populares de cruseros */
 
 .content-cards section {
     position: relative;
@@ -604,10 +607,6 @@ main {
     box-shadow: 0px 2px 7px 0px;
 }
 
-/* .content-article--img {
-    flex: 50%;
-} */
-
 .content-packages article figure {
     height: 390px;
     overflow: hidden;
@@ -623,7 +622,7 @@ main {
 .content-article--info {
     display: flex;
     flex-direction: column;
-    height: 340px;
+    height: 370px;
     justify-content: space-evenly;
 }
 
@@ -646,6 +645,8 @@ main {
     border: none;
     transition: 450ms;
 }
+
+/* estilo necesario para el color de letra en el viewport rentar carro */
 
 .rent-car {
     color: aliceblue;
@@ -821,7 +822,7 @@ footer {
     line-height: 24px;
 }
 
-/* Animaciones para nuestro main en recomendaciones */
+/* Animaciones para nuestro main en recomendaciones de los aviones */
 
 @keyframes animateAircraft {
     0% {
