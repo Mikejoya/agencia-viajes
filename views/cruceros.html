@@ -6,31 +6,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Latam Viaja</title>
-    <link rel="icon" href="./assets/img/logoEmpresa.png" type="image/png">
+    <link rel="icon" href="../assets/img/logoEmpresa.png" type="image/png">
 </head>
 <body>
     <!-- Section del header -->
     <header class="container-header">
         <section class="content-header--icons">
             <figure class="containt-logo">
-                <a href="./index.html">
-                    <img src="./assets/img/logoEmpresa.png" alt="Logo Empresa">
+                <a href="../index.html">
+                    <img src="../assets/img/logoEmpresa.png" alt="Logo Empresa">
                 </a>
             </figure>
             <div>
                 <h2>LATAM VIAJA</h2>
             </div>
             <figure class="containt-icon">
-                <img src="./assets/img/user.png" alt="Icono del usuario">
+                <img src="../assets/img/user.png" alt="Icono del usuario">
             </figure>
         </section>
         <section class="container-header--navar">
             <nav class="navar-header">
                 <ul class="header-navar--list">
                     <li>
-                    <a href="./index.html">
+                    <a href="../index.html">
                         Vuelos
                     </a>
                 </li>
@@ -40,17 +40,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./views/paquetes.html">
+                        <a href="./paquetes.html">
                             Paquetes
                         </a>
                     </li>
                     <li>
-                        <a href="./views/autos.html">
+                        <a href="./autos.html">
                             Autos
                         </a>
                     </li>
                     <li>
-                        <a href="./views/contacto.html">
+                        <a href="./contacto.html">
                             Contacto
                         </a>
                     </li>
@@ -61,29 +61,31 @@
     <main>
         <section class="content-main--flights">
             <video autoplay muted loop>
-                <source src="./assets/video/viajarAvion.mp4" type="video/mp4">
+                <source src="../assets/video/crucero.mp4" type="video/mp4">
             </video>
             <section class="container-title--form">
-                <div class="content-title-flights">
-                    <h1>¿A qué destino quiere viajar?</h1>
-                    <p>Controle sus fechas y con quien viajar.</p>
+                <div class="content-title-flights content-title-cruises">
+                    <h1>Su viaje perfecto es bordo de un crucero</h1>
+                    <p>Los mejores evento y comidas, incluidas con su paquete.</p>
                 </div>
-                <div class="content-main--flights--form">
-                    <form action="#" class="flights-form">
+                <div class="content-main--flights--form content-main--cruises">
+                    <form action="#" class="flights-form cruise-form">
                         <ul class="flights-list">
                         <li>
-                            <label for="ubicacionActual">Origen</label>
-                            <input name="ubicacionActual" type="text" placeholder="Ubicacion Actual">
+                            <label for="ubicacionActual">Seleccione una region</label>
+                            <select name="ubicacionActual" type="text" ,placeholder="Ubicacion Actual">
+                                <option value="seleccione destino" disabled selected="selected">Seleccione destino</option>
+                                <option value="caribe">Caribe</option>
+                                <option value="bahamas">Bahamas</option>
+                                <option value="alaska">Alaska</option>
+                                <option value="panamá">Panamá</option>
+                                <option value="europa">Europa</option>
+                            </select>
                         </li>
                         <li>
-                            <label for="ubicacionDestino">Destino</label>                            
-                            <input name="ubicacionDestino" type="text" placeholder="Ubicacion destino">
-                        </li>
-                        <li class="">
                             <label for="fechas">Fechas</label>
                             <div class="div-li--form flights-list--tree">
                                 <input name="fechaIda" type="date" placeholder="Dia-Mes-Año">
-                                <input name="fechaVuelta" type="date" placeholder="Dia-Mes-Año">
                             </div>
                         </li>
                         <li>
@@ -100,7 +102,7 @@
             </div>
         </section>
         </section>
-        <a href="./views/contacto.html">
+        <a href="./contacto.html">
             <div class="container-support--button">
                 <button>
                     <figure>
@@ -115,113 +117,99 @@
             </div>
         </a>
         <section class="container-recommendations--destinations">
-            <section class="content-recommendations--title">
-                <div>
-                    <h2>Recomendaciones</h2>
-                    <p>Descubre nuestras recomendaciones personalizadas para tu próximo viaje y aprovecha al máximo cada destino. Desde los lugares más populares hasta joyas ocultas, te ofrecemos itinerarios detallados, consejos prácticos y las mejores opciones de alojamiento. ¡Haz de tu viaje una experiencia inolvidable con nuestras sugerencias expertas!</p>
-                </div>
+            <section class="content-title--packages">
+                <h2>Paquetes más populares</h2>
             </section>
             <section class="container-cards--recommendations--destinations">
                 <section class="content-cards">
                     <article>
-                        <section class="cartagena">
-                            <h1>Colombia</h1>
-                            <h2>Gran Destino: Cartagena</h2>
-                            <p><strong>Descripción</strong>: Esta ciudad costera es famosa por su impresionante casco antiguo colonial, playas hermosas y vibrante vida nocturna. El Castillo de San Felipe de Barajas y las Islas del Rosario son imperdibles.</p>
+                        <section class="bahamas card-cruises card-cruises">
+                            <h1>Crucero Caribe y Bahamas</h1>
+                            <h2>Duración: 7 días</h2>
+                            <p><strong>Rutas</strong>: Miami, Nassau (Bahamas), Cozumel (México), Grand Turk (Turcas y Caicos)</p>
+                            <p><strong>Descripción</strong>: Explora playas de arena blanca, aguas cristalinas y vibrantes culturas insulares..</p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="huila">
-                            <h1>Colombia</h1>
-                            <h2>Destino Oculto: San Agustín</h2>
+                        <section class="panama card-cruises">
+                            <h1>Crucero del Canal de Panamá</h1>
+                            <h2>Duración: 14 días</h2>
+                            <p><strong>Rutas</strong>: Miami, Colón (Panamá), Puntarenas (Costa Rica), Puerto Vallarta (México), Los Ángeles</p>
                             <p><strong>Descripción</strong>
-                                : Conocido por su parque arqueológico, San Agustín alberga una de las mayores colecciones de estatuas religiosas y monumentos megalíticos de América Latina, rodeado de un paisaje natural impresionante.
+                                : Navega por el famoso Canal de Panamá y descubre destinos tropicales y vibrantes ciudades costeras.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="tokio">
-                            <h1>Japón</h1>
-                            <h2>Gran Destino: Tokio</h2>
+                        <section class="alaska card-cruises">
+                            <h1>Aventura Ártica y Alaskana</h1>
+                            <h2>Duración: 10 días</h2>
+                            <p><strong>Rutas</strong>: Anchorage, Juneau, Glacier Bay, Ketchikan</p>
                             <p><strong>Descripción</strong>
-                                : La capital de Japón es una mezcla fascinante de lo moderno y lo tradicional, con rascacielos futuristas, templos históricos y una gastronomía increíble.
+                                : Admira glaciares majestuosos, vida silvestre y paisajes espectaculares de Alaska.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="kanazawa">
-                            <h1>Japón</h1>
-                            <h2>Destino Oculto: Kanazawa</h2>
+                        <section class="crucero-caribe--panama card-cruises">
+                            <h1>Encantos del Caribe y Panamá</h1>
+                            <h2>Duración: 12 días</h2>
+                            <p><strong>Rutas</strong>: Cartagena (Colombia), Colón (Panamá), Aruba, Curazao, Bonaire</p>
                             <p><strong>Descripción</strong>
-                                : Conocida por su distrito de samuráis bien conservado, jardines paisajísticos como Kenrokuen y su vibrante escena artesanal, es un destino que ofrece una experiencia auténtica y menos concurrida.
+                                : Combina la riqueza histórica de Cartagena con la belleza natural del Caribe y la maravilla del Canal de Panamá.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="roma">
-                            <h1>Italia</h1>
-                            <h2>Gran Destino: Roma</h2>
+                        <section class="europa card-cruises">
+                            <h1>Exploración Europea</h1>
+                            <h2>Duración: 10 días</h2>
+                            <p><strong>Rutas</strong>: Barcelona, Marsella, Nápoles, Santorini, Atenas</p>
                             <p><strong>Descripción</strong>
-                                : La ciudad eterna, rica en historia y cultura, hogar de monumentos icónicos como el Coliseo, el Vaticano y la Fontana di Trevi.
+                                : Descubre las joyas del Mediterráneo con visitas a ciudades históricas y paisajes inolvidables.
 
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="matera">
-                            <h1>Italia</h1>
-                            <h2>Destino Oculto: Matera</h2>
+                        <section class="bahamas-caribe card-cruises">
+                            <h1>Maravillas del Caribe y Bahamas</h1>
+                            <h2>Duración: 8 días</h2>
+                            <p><strong>Rutas</strong>: Fort Lauderdale, Half Moon Cay (Bahamas), St. Thomas, San Juan (Puerto Rico)</p>
                             <p><strong>Descripción</strong>
-                                : Famosa por sus "sassi" (casas de piedra) y su paisaje troglodita, Matera ofrece una experiencia única con su antigua arquitectura y cuevas habitadas.
+                                : Disfruta de la diversidad del Caribe con su cultura vibrante, playas idílicas y emocionantes actividades.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="machu-picchu">
-                            <h1>Perú</h1>
-                            <h2>Gran Destino: Machu Picchu</h2>
+                        <section class="alaska-fiordos card-cruises">
+                            <h1>Ruta de los Fiordos y Alaska</h1>
+                            <h2>Duración: 12 días</h2>
+                            <p><strong>Rutas</strong>: Seattle, Sitka, Juneau, Skagway, Victoria (Canadá)</p>
                             <p><strong>Descripción</strong>
-                                : Esta ciudadela inca es uno de los destinos más emblemáticos del mundo, ofreciendo una experiencia histórica y vistas espectaculares.
+                                : Navega por los impresionantes fiordos de Alaska y explora pintorescas ciudades costeras.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
                     <article>
-                        <section class="santorini">
-                            <h1>Grecia</h1>
-                            <h2>Gran Destino: Santorini</h2>
+                        <section class="mediterraneo card-cruises">
+                            <h1>Crucero por el Mediterráneo y Europa Occidental</h1>
+                            <h2>Duración: 14 días</h2>
+                            <p><strong>Rutas</strong>: Roma, Florencia, Mónaco, Barcelona, Lisboa</p>
                             <p><strong>Descripción</strong>
-                                : Esta isla es famosa por sus impresionantes puestas de sol, casas blancas con techos azules y vistas panorámicas del mar Egeo.
+                                : Sumérgete en la rica historia y la cultura de Europa Occidental con paradas en ciudades emblemáticas.
                             </p>
                         </section>
                         <button>Reservar ahora</button>
                     </article>
-                    <article>
-                        <section class="barcelona">
-                            <h1>España</h1>
-                            <h2>Gran Destino: Barcelona</h2>
-                            <p><strong>Descripción</strong>
-                                : Con su arquitectura modernista de Gaudí, vibrante vida nocturna y playas urbanas, Barcelona es una ciudad llena de cultura y entretenimiento.
-                            </p>
-                        </section>
-                        <button>Reservar ahora</button>
-                    </article>
-                    <article>
-                        <section class="ha-long-bay">
-                            <h1>Vietnam</h1>
-                            <h2>Gran Destino: Ha Long Bay</h2>
-                            <p><strong>Descripción</strong>
-                                : Famosa por sus impresionantes formaciones rocosas kársticas y aguas esmeralda, es un destino icónico para cruceros y exploración de cuevas.
-                            </p>
-                        </section>
-                        <button>Reservar ahora</button>
-                    </article>
+
                 </section>
             </section>
         </section>

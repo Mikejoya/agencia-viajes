@@ -9,7 +9,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 /* Estilos para el Header */
 
@@ -78,7 +80,7 @@ figure {
     margin: 10px 0px 0px 0px;
 }
 
-.header-navar--list li {
+.header-navar--list li, .header-navar--list a {
     list-style: none;
     color: #5a5a5a;
 }
@@ -94,6 +96,8 @@ figure {
 main {
     position: relative;
 }
+
+/* Estilos para elementos globales de todas las paginas*/
 
 .content-main--flights {
     position: relative;
@@ -195,7 +199,7 @@ main {
     color: #04bfbf;
 }
 
-.flights-list li input {
+.flights-list li input, .flights-list li select {
     position: relative;
     max-width: 180px;
     height: 32px;
@@ -213,6 +217,39 @@ main {
     }
 }
 
+
+/* Estilos para elementos modificados de viewport cruceros*/
+
+.content-title-cruises {
+    min-width: 700px;
+    color: aliceblue;
+}
+
+.content-main--cruises {
+    min-width: 700px;
+}
+
+.cruise-form {
+    min-width: 100%;
+}
+
+.flights-list li select {
+    width: 200px;
+    height: 36px;
+}
+
+
+.content-title--packages {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-title--packages h2 {
+    text-align: center;
+    color: #023059;
+    padding: 66px 0;
+    margin: 0;
+}
 /* Estilos de boton de soporte flotante */
 
 .container-support--button {
@@ -223,7 +260,7 @@ main {
     z-index: 99;
 }
 
-.container-support--button button {
+.container-support--button button,  .content-article--info button {
     width: 100%;
     height: 36px;
     display: flex;
@@ -239,6 +276,7 @@ main {
 .container-support--button button:hover {
     cursor: pointer;
     background-color: #A0A603;
+    color: aliceblue;
     transform: translate3d( -1px, -1px, -1px);
     transition: 450ms ;
 }
@@ -270,8 +308,13 @@ main {
 
 .content-recommendations--title h1, .content-recommendations--title p {
     width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin: 0 auto;
     color: aliceblue;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .content-recommendations--title div {
@@ -401,6 +444,82 @@ main {
     border-radius: 8px;
 }
 
+/* Estilos para tarjetas del viewport cruceros */
+
+.bahamas {
+    background-image: url(../assets/img/cruceroBahamas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.panama {
+    background-image: url(../assets/img/cruceroPanama.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.alaska {
+    background-image: url(../assets/img/cruceroAlaska.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.crucero-caribe--panama {
+    background-image: url(../assets/img/cruceroCaribePanama.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.europa {
+    background-image: url(../assets/img/cruceroEuropa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.bahamas-caribe {
+    background-image: url(../assets/img/cruceroBahamasCaribe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.alaska-fiordos {
+    background-image: url(../assets/img/cruceroAlaskaFiordos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.mediterraneo {
+    background-image: url(../assets/img/cruceroEuropaOccidental.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+/* Estilos de tarjetas para los cruceros */
+
+.content-cards .card-cruises {
+    justify-content: center;
+}
+
+.content-cards section h1 {
+    font-size: larger;
+}
+/*------------------------------------------------------------*/
+
 .content-cards section {
     position: relative;
     height: 550px;
@@ -462,6 +581,210 @@ main {
     background-color: #A0A603;
 }
 
+/* Estilos para el viewport de paquetes */
+
+.content-packages {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 66px 0;
+    margin: 0 auto;
+}
+
+.content-packages article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: solid 1px #ee4e36;
+    border-radius: 8px;
+    box-shadow: 0px 2px 7px 0px;
+}
+
+/* .content-article--img {
+    flex: 50%;
+} */
+
+.content-packages article figure {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.content-packages article img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.content-article--info {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    justify-content: space-evenly;
+}
+
+.content-article--info p {
+    line-height: 30px;
+    margin-right: 16px;
+}
+
+.content-article--info button {
+    width: 40%;
+    margin: 0 auto;
+    border: solid 1px #ef4e35;
+    background-color: transparent;
+}
+
+.content-article--info button:hover {
+    cursor: pointer;
+    background-color: #A0A603;
+    color: aliceblue;
+    border: none;
+    transition: 450ms;
+}
+
+.rent-car {
+    color: aliceblue;
+}
+
+/* Estilos del viewport para contacto*/
+
+.main-contact {
+    background-color: #023059;
+    color: aliceblue;
+}
+
+.main-contact h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 66px;
+}
+
+.content-terms--conditions {
+    width: 60%;
+    line-height: 28px;
+    margin: 0 auto;
+}
+
+.content-terms--conditions h2 {
+    text-align: center;
+    padding-top: 66px;
+}
+
+/* Estilos para viewport de contacto en el formulario */
+
+
+.container-form--contact {
+    padding-bottom: 66px;
+}
+
+.container-form--contact h2 {
+    text-align: center;
+    margin-top: 66px;
+}
+
+.container-form--contact form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-form--contact {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.content-form--contact .input-names {
+    flex-direction: row;
+    gap: 24px;
+}
+
+.content-form--contact div {
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.content-form--contact .label-text {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.content-form--contact input {
+    width: 100%;
+    height: 32px;
+    border: solid 1px black;
+    border-radius: 8px;
+    background-color: transparent;
+    color: aliceblue;
+    outline: none;
+}
+
+
+.content-form--contact input:focus ~ label{
+    top: 0px;
+    left: 15px;
+    padding: 0 2px;
+    background: #023059;
+}
+
+.content-textarea textarea:focus ~ label {
+    top: 0;
+    background-color: #023059;
+}
+
+.content-textarea .label-text {
+    top: 14px;
+}
+
+.content-form--contact textarea {
+    height: 300px;
+    border: solid 1px black;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: transparent;
+    outline: none;
+}
+
+.content-form--contact .content-checkbox {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.content-checkbox input {
+    height: auto;
+}
+
+.content-form--contact button {
+    width: 180px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+}
+
+.content-form--contact button:hover {
+    cursor: pointer;
+    background-color: #A0A603;
+    transition: 450ms;
+}
 /* Estilos para el footer */
 
 footer {

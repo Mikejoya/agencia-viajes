@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Latam Viaja</title>
+        <link rel="icon" href="../assets/img/logoEmpresa.png" type="image/png">
+    </head>
+<body>
+    <header class="container-header">
+        <section class="content-header--icons">
+            <figure class="containt-logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logoEmpresa.png" alt="Logo Empresa">
+                </a>
+            </figure>
+            <div>
+                <h2>LATAM VIAJA</h2>
+            </div>
+            <figure class="containt-icon">
+                <img src="../assets/img/user.png" alt="Icono del usuario">
+            </figure>
+        </section>
+        <section class="container-header--navar">
+            <nav class="navar-header">
+                <ul class="header-navar--list">
+                    <li>
+                    <a href="../index.html">
+                        Vuelos
+                    </a>
+                </li>
+                    <li>
+                        <a href="../views/cruceros.html">
+                            Cruceros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./paquetes.html">
+                            Paquetes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./autos.html">
+                            Autos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="content-main--flights">
+            <video autoplay muted loop>
+                <source src="../assets/video/rentaAutos.mp4" type="video/mp4">
+            </video>
+            <section class="container-title--form">
+                <div class="content-title-flights rent-car">
+                    <h1>Rente un automovil con los mejores precios.</h1>
+                    <p>Recuerde que al rentar un automovil se entrega y recoge entre las horas establecidas. </p>
+                </div>
+                <div class="content-main--flights--form">
+                    <form action="#" class="flights-form">
+                        <ul class="flights-list" style="gap: 14px;">
+                        <li>
+                            <label for="lugarAlquiler">Lugar de alquiler</label>
+                            <input name="lugarAlquiler" type="text" placeholder="lugarAlquiler" required>
+                        </li>
+                        <li class="">
+                            <label for="horarios">Horarios</label>
+                            <div class="div-li--form flights-list--tree">
+                                <input name="horarioEntrega" type="time" placeholder="hora" min="10:00" max="22:30" required>
+                                <input name="horarioRecogida" type="time" min="10:00" max="22:30" required>
+                            </div>
+                        </li>
+                        <li class="">
+                            <label for="fechas">Fechas</label>
+                            <div class="div-li--form flights-list--tree">
+                                <input name="fechaIda" type="date" placeholder="Dia-Mes-Año" required>
+                                <input name="fechaVuelta" type="date" placeholder="Dia-Mes-Año" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">Automoviles</label>
+                            <div class="div-li--form flights-list--four">
+                                <select name="cantidadPasajeros" type="number" placeholder="Cantidad pasajeros">
+                                    <option value="seleccionesUnCarro" disabled selected="selected">Seleccione un carro</option>
+                                    <option value="toyotaCorolla">Toyota Corolla</option>
+                                    <option value="hyundaiElantra">Hyundai Elantra</option>
+                                    <option value="hondaCivic">Honda Civic</option>
+                                    <option value="kiaRio">Kia Rio</option>
+                                    <option value="nissanVersa">Nissan Versa</option>
+                                    <option value="fordFiesta">Ford Fiesta</option>
+                                </select>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 0 24 24" width="56px" fill="#04BFBF"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <a href="./contacto.html">
+            <div class="container-support--button">
+                <button>
+                    <figure>
+                        <img src="https://img.icons8.com/?size=100&id=wUB0486fVP3Z&format=png&color=000000" alt="icono boton soporte">
+                    </figure>
+                    <div>
+                        <p>
+                            ¿Necesitas ayuda?
+                        </p>
+                    </div>
+                </button>
+            </div>
+        </a>
+        </section>
+    </main>
+    <footer>
+        <section class="container-info--footer">
+            <section class="content-socialmedia--info">
+                    <div class="content-socialmedia--photos">
+                        <h1>Redes Sociales</h1>   
+                        <figure>
+                            <a href="#">
+                                <img src="https://img.icons8.com/?size=100&id=13912&format=png&color=000000" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="x">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000" alt="telegram">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="whatsapp">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="content-info--latamviaja">
+                        <p>info@latamviaja.com <br>
+                            <strong>
+                                Teléfonos:
+                            </strong>
+                            +57 (601) 805 1234
+                            +57 315 242 6789
+                            +57 315 235 4321
+                            +57 316 222 9876
+                            +57 315 818 1234
+                            +57 315 383 5678
+                            <br>
+                            <strong>
+                                Dirección:
+                            </strong>
+                                Carrera 10 # 50 – 20, Oficina 305, Edificio Torre Central, Barrio Chapinero, Bogotá, Colombia
+                        </p>
+                    </div>
+                
+            </section>
+            <section class="content-info--copyright">
+                <p>Copyright ©2024 latamviaja.com</p>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
