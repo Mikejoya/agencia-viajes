@@ -881,7 +881,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 /* Animaciones para nuestro main en recomendaciones de los aviones */
