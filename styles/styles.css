@@ -63,6 +63,10 @@ figure {
     margin: 8px;
 }
 
+.containt-icon img:hover {
+    cursor: pointer;
+}
+
 /* Estilos del navar contenido por el Header */
 
 .container-header--navar {
@@ -525,7 +529,7 @@ main {
 
 .content-cards section {
     position: relative;
-    height: 550px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -567,6 +571,24 @@ main {
     margin: 0;
 }
 
+.content-cards div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.content-cards div p {
+    width: auto;
+}
+
+.content-cards div input {
+    width: 40px;
+    border: 1px solid #ef4e35;
+    border-radius: 8px;
+    background-color: #73A2BF;
+}
+
 .content-cards button {
     position: absolute;
     bottom: 16px;
@@ -582,6 +604,7 @@ main {
 .content-cards button:hover {
     cursor: pointer;
     background-color: #A0A603;
+    color: white;
 }
 
 /* Estilos para el viewport de paquetes */
@@ -598,6 +621,7 @@ main {
 }
 
 .content-packages article {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,6 +631,30 @@ main {
     box-shadow: 0px 2px 7px 0px;
 }
 
+.content-packages .icon-fovorite {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-image: url(https://img.icons8.com/?size=30&id=87&format=png&color=ee4e36);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.content-packages .icon-fovorite:focus {
+    background-image: url(https://img.icons8.com/?size=100&id=V4c6yYlvXtzy&format=png&color=000000);
+}
+
+.icon-fovorite .icon-favorite--img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .content-packages article figure {
     height: 390px;
     overflow: hidden;
@@ -614,21 +662,32 @@ main {
 }
 
 .content-packages article img {
-    width: 500px;
+    width: 380px;
     height: 400px;
     object-fit: cover;
 }
 
 .content-article--info {
+    height: 370px;
     display: flex;
     flex-direction: column;
-    height: 370px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .content-article--info p {
     line-height: 30px;
     margin-right: 16px;
+}
+
+.content-count-people {
+    padding-bottom: 8px;
+}
+
+.content-count-people input {
+    width: 40px;
+    border: 1px solid #ef4e35;
+    border-radius: 8px;
 }
 
 .content-article--info button {
@@ -882,6 +941,73 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
+/* Estilos para nuestra vista de iniciar sesión */
+
+.container-form--login {
+    position: relative;
+    height: 66vh;
+    background-color: #023059;
+}
+
+.content-title-form--login {
+    min-width: 620px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.content-title--login .title-login {
+    margin: 0;
+}
+
+.login-new-user {
+    text-align: center;
+}
+
+.login-new-user a {
+    color: #a0a603;
+}
+
+/* Estilos para el viewport de register */
+
+.container-form--register {
+    height: 62vh;
+    background-color: #023059;
+    color: aliceblue;
+}
+
+.container-form--contact .content-title--register {
+    padding-top: 66px;
+    margin: 0;
+}
+
+.content-checkbox--registrer a {
+    color: #a0a603;
+}
+
+/* Estilos para el viewport de favoritos */
+
+.icon-fovorite--view {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-image: url(https://img.icons8.com/?size=100&id=V4c6yYlvXtzy&format=png&color=000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.content-packages .icon-fovorite--view:focus {
+    background-image: url(https://img.icons8.com/?size=30&id=87&format=png&color=ee4e36);
+}
+
 
 /* Animaciones para nuestro main en recomendaciones de los aviones */
 
